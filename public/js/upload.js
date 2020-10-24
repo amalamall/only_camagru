@@ -59,7 +59,7 @@ function savepic() {
 				formdata.append("description",document.getElementById("description").value )
 				formdata.append("titleupload", document.getElementById("titleupload").value)
 				var req = new XMLHttpRequest()
-				req.open("POST", "http://46.101.187.161/camagru/posts/saveimage")
+				req.open("POST", "http://165.227.175.72/camagru/posts/saveimage")
 				req.onload = function(e) {
 					if(req.status == 200){
 						document.getElementById('savepicture').disabled = false;

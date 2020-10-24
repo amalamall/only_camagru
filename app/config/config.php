@@ -8,7 +8,7 @@
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
   // URL Root
-  define('URLROOT', 'http://46.101.187.161/camagru');
+  define('URLROOT', 'http://165.227.175.72/camagru');
   // Site Name
   define('SITENAME', 'CAMAGRU');
   // App Version
