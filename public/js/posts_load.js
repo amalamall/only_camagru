@@ -16,7 +16,7 @@ function loadXMLDoc(i) {
         }
     };
 
-    xmlhttp.open("GET", "http://165.227.175.72/camagru/posts/getposts?offset=" + i + "&limit=6", true);
+    xmlhttp.open("GET", "http://46.101.187.161/camagru/posts/getposts?offset=" + i + "&limit=6", true);
     xmlhttp.send();
 }
 
