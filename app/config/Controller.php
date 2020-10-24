@@ -16,9 +16,9 @@
     // Load view
     public function view($view, $data = []){
       // Check for view file
-      echo $_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/' . $view . '.php';
-      if(file_exists($_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/' . $view . '.php')){
-        require_once $_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/' . $view . '.php';
+      echo $_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/' . strtolower($view) . '.php';
+      if(file_exists($_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/' . strtolower($view) . '.php')){
+        require_once $_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/' . strtolower($view) . '.php';
       } else {
         // View does not exist
         require_once($_SERVER['DOCUMENT_ROOT'].'/camagru/app/views/users/error.php');
